@@ -1,0 +1,22 @@
+﻿# For more info on HTTP files go to https://aka.ms/vs/httpfile
+@Web_HostAddress = https://localhost:7024
+
+# POST Create Form
+POST {{Web_HostAddress}}/api/forms/3
+Content-Type: application/json
+
+{
+    "IsPublished" : false
+}
+###
+
+# GET Form
+GET {{Web_HostAddress}}/api/forms/3
+
+### 
+
+# Patch publish Form Login
+PATCH {{Web_HostAddress}}/api/forms/3/publish
+Content-Type: application/json
+
+###
